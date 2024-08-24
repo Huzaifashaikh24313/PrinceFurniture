@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('https://source.unsplash.com/1600x900/?furniture') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(179, 21, 267, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 1.8em;
+    padding: 0 10px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #43dd83;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 48%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+   /* background-color: #ff61fc;*/
+    background-color:#008080;
+
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Buttons Styles */
+.contact-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-buttons a {
+    background-color: #fff;
+    color: #ff6f61;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-buttons a:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    /* Adjust navigation for mobile view */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background-color: #43dd83; /* Semi-transparent background for mobile view */
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contact-buttons {
+        bottom: 10px;
+        right: 10px;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .contact-buttons a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+.product-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: #43dd83; /* Adjust if needed */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-nav ul li {
+    margin: 0;
+}
+
+.product-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive Styles for Product Navigation */
+@media (max-width: 600px) {
+    .product-nav ul {
+        flex-direction: row; /* Horizontal layout on mobile */
+        padding: 0;
+        margin: 0;
+        background-color: #43dd83; 
+        /* Adjust if needed */
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .product-nav ul li {
+        margin: 0;
+    }
+
+    .product-nav ul li a {
+        padding: 10px 15px;
+        display: block;
+        text-align: center;
+    }
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply blinking effect to text */
+.blinking-text {
+    font-size: 24px;
+    color: #ff0000; /* Adjust color as needed */
+    animation: blink 1s step-start infinite;
+}
+h1{
+    color: gold;
+}
+.home-details{
+    border: 2px solid grey;
+    font-weight: bold;
+}
+.home-details li{
+        margin-bottom: 15px; /* Adjust the value to increase or decrease spacing */
+    color: rgb(15, 155, 27);
+}
